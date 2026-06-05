@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de etiquetas</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 
 <body> <!-- Contenido que ve el usuario -->
@@ -13,9 +15,32 @@
         <h1>Ejemplo de diferentes etiquetas</h1> <!-- H1: Título 1 -->
     </header>
 
+    <!-- Barra de navegación (navigation bar o navbar): Sección de una página que contiene enlaces para desplazarse entre las distintas páginas o secciones de un sitio. 
+    Sintaxis: 
+        <nav>: define una sección de navegación.
+        <a>: crea enlaces a otras páginas o secciones.
+        href: especifica el destino del enlace.
+        aria-current="page": Indica que es la página actual (el lector de pantalla anunciará que "Inicio" es la página actual.)
+    -->
+    <nav>
+        <a href="headers.html">Vince Gilligan</a> <!--a: Enlace-->
+        <a href="">Semana 1</a> <!--a: Enlace-->
+        <a href="">Semana 2</a> <!--a: Enlace-->
+        <a href="">Semana 3</a> <!--a: Enlace-->
+        <a href="">Semana 4</a> <!--a: Enlace-->
+        <a href="#habilidadesBlandas">Habilidades blandas</a> <!--a: Enlace-->
+        <a href="https://fontawesome.com/search?q=code">FontAwesome</a> <!--a: Enlace-->
+
+    </nav>
+
+
     <main> <!-- Contenido principal -->
 
-        <h2>Habilidades técnicas</h2>
+        <!--Iconos -->
+        
+        <!-- aria-hidden: Atributo de accesibilidad de ARIA (Accessible Rich Internet Applications) que indica a los lectores de pantalla y otras tecnologías de asistencia que un elemento debe ser ignorado. -->
+         <!--Ícono decorativo-->
+        <i class="fa-solid fa-code" aria-hidden="true"></i><h2>Habilidades técnicas</h2>
 
         <h3>Backend</h3>
 
@@ -47,12 +72,114 @@
         </ol>
 
         <h2>Habilidades blandas</h2>
+        
 
         <img src="OIP.webp" alt=""> <!-- alt= "": Recurso es decorativo -->
         <img src="OIP (1).webp" alt="Cara con pulgares arriba"> <!-- alt= "Descripción del recurso": Recurso es informativo -->
+        
+       
 
+        <!-- Audio 
+            <audio>: define el reproductor de audio. 
+            controls: muestra los controles de reproducción, pausa y volumen.
+            <source>: especifica el archivo de audio.
+            El texto alternativo dentro de <audio> se muestra si el navegador no soporta audio. 
+        -->
+         <audio src="test.mp3" controls>
+            Su navegador no soporta el elemento audio.
+         </audio>
+
+         <audio controls>
+            Su navegador no soporta el elemento audio.
+            <source 
+                src="test.mp3"
+            />
+         </audio>
+
+
+
+        <!-- Video
+            controls: Proporciona controles estándar accesibles para teclado y lectores de pantalla.
+            kind="captions": subtítulos con diálogos y sonidos relevantes.
+            srclang: idioma.
+            default: activa esa pista por defecto.
+            No utilizar: autoplay: El contenido que se reproduce automáticamente puede resultar molesto y dificultar el uso de lectores de pantalla.
+         -->
+         <video src="test.mp4" controls width="500px">
+            Su navegador no soporta la reproducción de video.
+            <track
+                kind="captions"
+                src="subtitulos-en.vtt"
+                srclang="en"
+                label="Inglés - en"
+            />
+         </video>
+
+         <!-- Tablas: Representar información organizada
+          Sintaxis:  
+            table: Define la tabla
+            caption: Título de la tabla
+            <tr> (Table Row): Representa una fila. Cada fila puede contener encabezados (<th>) o datos (<td>).
+            <th> (Table Header): Representa una celda de encabezado. Los navegadores suelen mostrarla en negrita y centrada. Los lectores de pantalla la utilizan para identificar los encabezados de las columnas o filas.
+            <td> (Table Data): Representa una celda de datos. Contiene los datos normales de la tabla.
+        
+          
+         -->
+
+         <table>
+            <caption> <!--Nombre de la tabla -->
+                Lista de estudiantes
+            </caption>
+
+            <tr> <!-- Filas -->
+                <th>Nombre</th> <!-- Encabezado -->
+                <th>Correo</th> <!-- Encabezado -->
+                <th>Dirección</th> <!-- Encabezado -->
+            </tr>
+
+            <tr> <!-- Fila 2 -->
+                <td>Luis Corella</td> <!-- Dato común/normal -->
+                <td>lcorella@test.ac.cr</td>
+                <td>Lugar 1</td>
+            </tr>
+
+            <tr>
+                <td>Andrés Gamboa</td> <!-- Dato común/normal -->
+                <td>agamboa@test.ac.cr</td>
+                <td>Lugar 2</td>
+            </tr>
+
+            <tr>
+                <td>Santiago Loría</td>
+                <td>sloriac@ucenfotec.cr</td>
+                <td>Lugar 3</td>
+            </tr>
+
+            <tr>
+                <td>Edgar Castillo</td>
+                <td>ecastillo.ac.cr</td>
+                <td>Lugar 4</td>
+            </tr>
+
+            <tr>
+                <td>Alberto Calvo</td>
+                <td>acalvo@test.ac.cr</td>
+                <td>Lugar 5</td>
+            </tr>
+
+         </table>
+
+
+         
 
     </main>
+
+    <!-- Pie de página <footer>: Contiene información complementaria, como datos de contacto, derechos de autor, enlaces legales, redes sociales o información del autor. -->
+    <footer>
+        <a href="https://fontawesome.com/search?q=code">Descargue nuestra aplicación en la Play Store </a>
+        <p>&copy; 2026. Todos los derechos reservados.</p>
+    </footer>
+    
 
 </body>
 
