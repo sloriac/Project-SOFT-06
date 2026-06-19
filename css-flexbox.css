@@ -1,0 +1,81 @@
+/*Estilos CSS a página sin estilos*/
+
+/*Definir el estilo general de la página*/
+:root {
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f5f7fc;
+}
+
+/*Dar estilo a la barra de navegación. definir las siguientes propiedades*/
+/*Revisar*/
+nav {
+    background-color: #1e2a3e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-links {
+    /*Estilos a los items de la barra de navegación*/
+    color: #ffffff;
+    padding: 10px;
+    font: bold;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Dar estilo al main*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+/*Dar estilo a la tarjeta de perfil*/
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+/*Dar estilo al ícono de usuario*/
+#user-styles {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*Estilo a la etiqueta img*/
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px color(#4c9aff);
+}
+
+/*Estilo al botón seguir*/
+.btn-primary { 
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #4c9aff;
+    color: #ffffff;
+}
+
+/*Estilo al boton mensaje*/
