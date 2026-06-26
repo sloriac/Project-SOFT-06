@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+
+    <link rel="stylesheet" href="estilos-generales.css">
+</head>
+
+
+<body>
+
+    <main>
+
+        <header>
+            <h1>Registro de usuario</h1>
+            <p class="subtitulo">Complete todos los campos obligatorios para crear su cuenta.</p>
+        </header>
+
+        <form action="" novalidate>
+            <!--Nombre, correo, contraseña, verificación de contraseña-->
+            <div>
+                <label for="nombre">Nombre completo</label>
+                <span aria-hidden="true">*</span>
+                <div>
+                    <input type="text" id="nombre" placeholder="ej. María Pérez" aria-describedby="ayuda-nombre" required aria-required="true">
+                    <span id="ayuda-nombre" class="texto-oculto">Ingrese su nombre completo (mínimo 5 caracteres), por ejemplo: María Pérez</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <span aria-hidden="true">*</span>
+                <div>
+                    <input type="email" id="correo" placeholder="ej. usuario.ucenfotec.ac.cr" aria-describedby="ayuda-correo" required aria-required="true">
+                    <span id="ayuda-correo" class="texto-oculto">Ingrese su correo electrónico, por ejemplo: usuario.ucenfotec.ac.cr</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <span aria-hidden="true">*</span>
+                <div>
+                    <input type="password" id="contraseña" required aria-required="true">
+                </div>
+            </div>
+
+            <div>
+                <label for="confirmar-contrasena">Confirmar contraseña</label>
+                <span aria-hidden="true">*</span>
+                <div>
+                    <input type="password" id="confirmar-contrasena" placeholder="Digite la contraseña de nuevo" aria-describedby="ayuda-confirmar-contraseña" required aria-required="true">
+                    <span id="ayuda-confirmar-contraseña" class="texto-oculto">Ingrese la contraseña de nuevo</span>
+                </div>
+            </div>
+
+            <div>
+                <button class="guardar-formulario" id="crear-cuenta">
+                    Crear cuenta
+                </button>
+            </div>
+
+
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
