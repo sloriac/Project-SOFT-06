@@ -1,0 +1,22 @@
+.subtitulo {
+    color: #c0392b;
+    margin-bottom: 0.8rem;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+header{
+    font-size: 15px;
+}
+
+h1 {
+    font-size:2rem;
+    /* 
+    rem: elemento raíz 
+    em: elemento padre (15px), elemento hijo (h1: 15px*2 = 30px)
+    */
+    margin-bottom: 0.3rem;
+    color: var(--azul);
+}
